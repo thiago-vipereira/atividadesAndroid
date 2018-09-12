@@ -8,8 +8,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends Activity implements AdapterView.OnItemSelectedListener{
 
+    List<String> items;
     private Spinner spinner;
     private TextView textViewResult;
 
@@ -21,7 +25,14 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
         spinner = findViewById(R.id.spinner);
         textViewResult = findViewById(R.id.textViewResult);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.resp, android.R.layout.simple_spinner_item);
+        items = new ArrayList<>();
+        items.add("1");
+        items.add("2");
+        items.add("3");
+        items.add("4");
+        items.add("5");
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line,items);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
