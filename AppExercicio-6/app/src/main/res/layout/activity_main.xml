@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.opet.exercicio6.MainActivity">
+
+    <EditText
+        android:id="@+id/editAlt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Altura 1"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editAlt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Altura 2"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editAlt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Altura 3"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editAlt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Altura 4"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editAlt5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Altura 5"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editAlt6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Altura 6"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:onClick="calc"
+        android:text="Calcular"
+        tools:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="38dp" />
+
+
+</LinearLayout>
